@@ -1,0 +1,8 @@
+
+search_react.page_controller_search:
+  path: '/thematic-areas/constitutions/document-library'
+  defaults:
+    _controller: '\Drupal\search_react\Controller\SearchController::searchPage'
+    _title: 'Document Library'
+  requirements:
+    _permission: 'access content'

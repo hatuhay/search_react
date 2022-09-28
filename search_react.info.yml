@@ -1,0 +1,6 @@
+name: 'React Search'
+type: module
+description: 'React search using views exposed results'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Custom'

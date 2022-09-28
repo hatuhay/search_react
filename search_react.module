@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Contains search_react.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function search_react_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the search_react module.
+    case 'help.page.search_react':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Búsqueda') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+/**
+ * Implements hook_theme().
+ */
+function search_react_theme() {
+  return [
+    'search' => [
+      'variables' => [
+        'results' => [],
+      ],
+      'render element' => 'children',
+    ],
+  ];
+}
+
